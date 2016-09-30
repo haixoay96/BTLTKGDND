@@ -8,6 +8,8 @@
   <li> Nguyễn Thị Hạnh</li>
 </ul>
 Miêu tả:
+##  
+<img src="http://i.imgur.com/ocmYGyh.png">
 
   
   
