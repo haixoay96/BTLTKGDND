@@ -13,5 +13,12 @@
         <item name="android:background">#4592CF</item>
         <item name="android:colorButtonNormal">#35439B</item>
     </style>
+    <style name="MainActivity" parent="AppTheme">
+        <item name="colorPrimaryDark">#35439B</item>
+        <item name="colorAccent">#ffffff</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#4592CF</item>
+        <item name="android:colorButtonNormal">#35439B</item>
+    </style>
 
 </resources>
