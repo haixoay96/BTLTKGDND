@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ChatwithmeBTLTKGDND</string>
+    <string-array name="user_names">
+        <item>Nguyen Duc Linh</item>
+        <item>Bruce Lee</item>
+        <item>Dinh Bao Khanh</item>
+        <item>Nguyen Van Hung</item>
+    </string-array>
 </resources>
