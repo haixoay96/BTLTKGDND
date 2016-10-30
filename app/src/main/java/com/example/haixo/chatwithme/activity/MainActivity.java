@@ -1,5 +1,7 @@
 package com.example.haixo.chatwithme.activity;
 
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -15,10 +17,13 @@ import com.example.haixo.chatwithme.support.DividerItemDecoration;
 
 import java.util.ArrayList;
 
+import static android.R.id.primary;
+
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ArrayList<User> list;
     private Toolbar toolbar;
+    private CollapsingToolbarLayout collapsingToolbarLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         AdapterListUser adapterListUser = new AdapterListUser(list);
         recyclerView.setAdapter(adapterListUser);
+        //ViewCompat.setTransitionName(toolbar,"Big");
+        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        collapsingToolbarLayout.setTitle("Chat !");
+        collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
+        collapsingToolbarLayout.setContentScrimColor(android.R.color.transparent);
+        collapsingToolbarLayout.setStatusBarScrimColor(android.R.color.transparent);
+
     }
 
     private void setToolbar() {
